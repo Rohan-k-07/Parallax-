@@ -16,10 +16,11 @@ export default function Index() {
 
     // Scaling for parallax effect
     const scaleVideo = useTransform(scrollYProgress, [0, 1], [1, 1.3]);
-    const scaleImage1 = useTransform(scrollYProgress, [0, 1], [1, 1.8]);
-    const scaleImage2 = useTransform(scrollYProgress, [0, 1], [1, 2]);
-    const scaleImage3 = useTransform(scrollYProgress, [0, 1], [1, 1.6]);
-    const clipPath = useTransform(scrollYProgress, [0, 1], ["inset(40%)", "inset(0%)"]);
+    const scaleImage1 = useTransform(scrollYProgress, [0, 1], [1, 9]);
+    const scaleImage2 = useTransform(scrollYProgress, [0, 1], [1, 9]);
+    const scaleImage3 = useTransform(scrollYProgress, [0, 1], [1, 9]);
+    const clipPath = useTransform(scrollYProgress, [0, 1], ["inset(25% 40%)", "inset(0% 0%)"]);
+
 
     const pictures = [
         { src: Picture2, scale: scaleImage1 },
